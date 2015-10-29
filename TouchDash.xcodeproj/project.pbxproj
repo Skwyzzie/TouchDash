@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28DD48B91BE1AF6D0070939F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD48B81BE1AF6D0070939F /* AppDelegate.swift */; };
+		28DD48BB1BE1AF6D0070939F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD48BA1BE1AF6D0070939F /* ViewController.swift */; };
+		28DD48BE1BE1AF6E0070939F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD48BC1BE1AF6E0070939F /* Main.storyboard */; };
+		28DD48C01BE1AF6E0070939F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DD48BF1BE1AF6E0070939F /* Assets.xcassets */; };
+		28DD48C31BE1AF6E0070939F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD48C11BE1AF6E0070939F /* LaunchScreen.storyboard */; };
+		28DD48CE1BE1AF6E0070939F /* TouchDashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD48CD1BE1AF6E0070939F /* TouchDashTests.swift */; };
+		28DD48D91BE1AF6E0070939F /* TouchDashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD48D81BE1AF6E0070939F /* TouchDashUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28DD48CA1BE1AF6E0070939F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DD48AD1BE1AF6D0070939F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DD48B41BE1AF6D0070939F;
+			remoteInfo = TouchDash;
+		};
+		28DD48D51BE1AF6E0070939F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28DD48AD1BE1AF6D0070939F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28DD48B41BE1AF6D0070939F;
+			remoteInfo = TouchDash;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28DD48B51BE1AF6D0070939F /* TouchDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DD48B81BE1AF6D0070939F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28DD48BA1BE1AF6D0070939F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28DD48BD1BE1AF6E0070939F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28DD48BF1BE1AF6E0070939F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28DD48C21BE1AF6E0070939F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28DD48C41BE1AF6E0070939F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DD48C91BE1AF6E0070939F /* TouchDashTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchDashTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DD48CD1BE1AF6E0070939F /* TouchDashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDashTests.swift; sourceTree = "<group>"; };
+		28DD48CF1BE1AF6E0070939F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DD48D41BE1AF6E0070939F /* TouchDashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchDashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DD48D81BE1AF6E0070939F /* TouchDashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchDashUITests.swift; sourceTree = "<group>"; };
+		28DD48DA1BE1AF6E0070939F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DD48B21BE1AF6D0070939F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DD48C61BE1AF6E0070939F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DD48D11BE1AF6E0070939F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		28DD48AC1BE1AF6D0070939F = {
+			isa = PBXGroup;
+			children = (
+				28DD48B71BE1AF6D0070939F /* TouchDash */,
+				28DD48CC1BE1AF6E0070939F /* TouchDashTests */,
+				28DD48D71BE1AF6E0070939F /* TouchDashUITests */,
+				28DD48B61BE1AF6D0070939F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		28DD48B61BE1AF6D0070939F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DD48B51BE1AF6D0070939F /* TouchDash.app */,
+				28DD48C91BE1AF6E0070939F /* TouchDashTests.xctest */,
+				28DD48D41BE1AF6E0070939F /* TouchDashUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DD48B71BE1AF6D0070939F /* TouchDash */ = {
+			isa = PBXGroup;
+			children = (
+				28DD48B81BE1AF6D0070939F /* AppDelegate.swift */,
+				28DD48BA1BE1AF6D0070939F /* ViewController.swift */,
+				28DD48BC1BE1AF6E0070939F /* Main.storyboard */,
+				28DD48BF1BE1AF6E0070939F /* Assets.xcassets */,
+				28DD48C11BE1AF6E0070939F /* LaunchScreen.storyboard */,
+				28DD48C41BE1AF6E0070939F /* Info.plist */,
+			);
+			path = TouchDash;
+			sourceTree = "<group>";
+		};
+		28DD48CC1BE1AF6E0070939F /* TouchDashTests */ = {
+			isa = PBXGroup;
+			children = (
+				28DD48CD1BE1AF6E0070939F /* TouchDashTests.swift */,
+				28DD48CF1BE1AF6E0070939F /* Info.plist */,
+			);
+			path = TouchDashTests;
+			sourceTree = "<group>";
+		};
+		28DD48D71BE1AF6E0070939F /* TouchDashUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28DD48D81BE1AF6E0070939F /* TouchDashUITests.swift */,
+				28DD48DA1BE1AF6E0070939F /* Info.plist */,
+			);
+			path = TouchDashUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28DD48B41BE1AF6D0070939F /* TouchDash */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DD48DD1BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDash" */;
+			buildPhases = (
+				28DD48B11BE1AF6D0070939F /* Sources */,
+				28DD48B21BE1AF6D0070939F /* Frameworks */,
+				28DD48B31BE1AF6D0070939F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchDash;
+			productName = TouchDash;
+			productReference = 28DD48B51BE1AF6D0070939F /* TouchDash.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28DD48C81BE1AF6E0070939F /* TouchDashTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DD48E01BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDashTests" */;
+			buildPhases = (
+				28DD48C51BE1AF6E0070939F /* Sources */,
+				28DD48C61BE1AF6E0070939F /* Frameworks */,
+				28DD48C71BE1AF6E0070939F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DD48CB1BE1AF6E0070939F /* PBXTargetDependency */,
+			);
+			name = TouchDashTests;
+			productName = TouchDashTests;
+			productReference = 28DD48C91BE1AF6E0070939F /* TouchDashTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28DD48D31BE1AF6E0070939F /* TouchDashUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DD48E31BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDashUITests" */;
+			buildPhases = (
+				28DD48D01BE1AF6E0070939F /* Sources */,
+				28DD48D11BE1AF6E0070939F /* Frameworks */,
+				28DD48D21BE1AF6E0070939F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28DD48D61BE1AF6E0070939F /* PBXTargetDependency */,
+			);
+			name = TouchDashUITests;
+			productName = TouchDashUITests;
+			productReference = 28DD48D41BE1AF6E0070939F /* TouchDashUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DD48AD1BE1AF6D0070939F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Kerry Hackert";
+				TargetAttributes = {
+					28DD48B41BE1AF6D0070939F = {
+						CreatedOnToolsVersion = 7.1;
+					};
+					28DD48C81BE1AF6E0070939F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 28DD48B41BE1AF6D0070939F;
+					};
+					28DD48D31BE1AF6E0070939F = {
+						CreatedOnToolsVersion = 7.1;
+						TestTargetID = 28DD48B41BE1AF6D0070939F;
+					};
+				};
+			};
+			buildConfigurationList = 28DD48B01BE1AF6D0070939F /* Build configuration list for PBXProject "TouchDash" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28DD48AC1BE1AF6D0070939F;
+			productRefGroup = 28DD48B61BE1AF6D0070939F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DD48B41BE1AF6D0070939F /* TouchDash */,
+				28DD48C81BE1AF6E0070939F /* TouchDashTests */,
+				28DD48D31BE1AF6E0070939F /* TouchDashUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DD48B31BE1AF6D0070939F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DD48C31BE1AF6E0070939F /* LaunchScreen.storyboard in Resources */,
+				28DD48C01BE1AF6E0070939F /* Assets.xcassets in Resources */,
+				28DD48BE1BE1AF6E0070939F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DD48C71BE1AF6E0070939F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DD48D21BE1AF6E0070939F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DD48B11BE1AF6D0070939F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DD48BB1BE1AF6D0070939F /* ViewController.swift in Sources */,
+				28DD48B91BE1AF6D0070939F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DD48C51BE1AF6E0070939F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DD48CE1BE1AF6E0070939F /* TouchDashTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28DD48D01BE1AF6E0070939F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DD48D91BE1AF6E0070939F /* TouchDashUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28DD48CB1BE1AF6E0070939F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DD48B41BE1AF6D0070939F /* TouchDash */;
+			targetProxy = 28DD48CA1BE1AF6E0070939F /* PBXContainerItemProxy */;
+		};
+		28DD48D61BE1AF6E0070939F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28DD48B41BE1AF6D0070939F /* TouchDash */;
+			targetProxy = 28DD48D51BE1AF6E0070939F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28DD48BC1BE1AF6E0070939F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DD48BD1BE1AF6E0070939F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28DD48C11BE1AF6E0070939F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DD48C21BE1AF6E0070939F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28DD48DB1BE1AF6E0070939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28DD48DC1BE1AF6E0070939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28DD48DE1BE1AF6E0070939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		28DD48DF1BE1AF6E0070939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TouchDash/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDash;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		28DD48E11BE1AF6E0070939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchDashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchDash.app/TouchDash";
+			};
+			name = Debug;
+		};
+		28DD48E21BE1AF6E0070939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TouchDashTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDashTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchDash.app/TouchDash";
+			};
+			name = Release;
+		};
+		28DD48E41BE1AF6E0070939F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TouchDashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TouchDash;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		28DD48E51BE1AF6E0070939F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TouchDashUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDashUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TouchDash;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DD48B01BE1AF6D0070939F /* Build configuration list for PBXProject "TouchDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DD48DB1BE1AF6E0070939F /* Debug */,
+				28DD48DC1BE1AF6E0070939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DD48DD1BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDash" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DD48DE1BE1AF6E0070939F /* Debug */,
+				28DD48DF1BE1AF6E0070939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28DD48E01BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDashTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DD48E11BE1AF6E0070939F /* Debug */,
+				28DD48E21BE1AF6E0070939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		28DD48E31BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDashUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DD48E41BE1AF6E0070939F /* Debug */,
+				28DD48E51BE1AF6E0070939F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28DD48AD1BE1AF6D0070939F /* Project object */;
+}
