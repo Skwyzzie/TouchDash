@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28A17C381BF7C3F600901AEA /* CruiseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A17C371BF7C3F600901AEA /* CruiseViewController.swift */; };
+		28A17C3A1BF7EA6000901AEA /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A17C391BF7EA5F00901AEA /* MusicViewController.swift */; };
+		28A17C411BF8009B00901AEA /* cruise_control_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A17C3B1BF8009B00901AEA /* cruise_control_btn.png */; };
+		28A17C421BF8009B00901AEA /* music_control_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A17C3C1BF8009B00901AEA /* music_control_bg.png */; };
+		28A17C431BF8009B00901AEA /* music_control_btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A17C3D1BF8009B00901AEA /* music_control_btn.png */; };
+		28A17C441BF8009B00901AEA /* music_control_ff.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A17C3E1BF8009B00901AEA /* music_control_ff.png */; };
+		28A17C451BF8009B00901AEA /* music_control_playpause.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A17C3F1BF8009B00901AEA /* music_control_playpause.png */; };
+		28A17C461BF8009B00901AEA /* music_control_rew.png in Resources */ = {isa = PBXBuildFile; fileRef = 28A17C401BF8009B00901AEA /* music_control_rew.png */; };
 		28DD48B91BE1AF6D0070939F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD48B81BE1AF6D0070939F /* AppDelegate.swift */; };
 		28DD48BB1BE1AF6D0070939F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DD48BA1BE1AF6D0070939F /* ViewController.swift */; };
 		28DD48BE1BE1AF6E0070939F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DD48BC1BE1AF6E0070939F /* Main.storyboard */; };
@@ -34,6 +42,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		28A17C371BF7C3F600901AEA /* CruiseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CruiseViewController.swift; sourceTree = "<group>"; };
+		28A17C391BF7EA5F00901AEA /* MusicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
+		28A17C3B1BF8009B00901AEA /* cruise_control_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cruise_control_btn.png; sourceTree = "<group>"; };
+		28A17C3C1BF8009B00901AEA /* music_control_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_control_bg.png; sourceTree = "<group>"; };
+		28A17C3D1BF8009B00901AEA /* music_control_btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_control_btn.png; sourceTree = "<group>"; };
+		28A17C3E1BF8009B00901AEA /* music_control_ff.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_control_ff.png; sourceTree = "<group>"; };
+		28A17C3F1BF8009B00901AEA /* music_control_playpause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_control_playpause.png; sourceTree = "<group>"; };
+		28A17C401BF8009B00901AEA /* music_control_rew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_control_rew.png; sourceTree = "<group>"; };
 		28DD48B51BE1AF6D0070939F /* TouchDash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchDash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28DD48B81BE1AF6D0070939F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28DD48BA1BE1AF6D0070939F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +117,16 @@
 				28DD48BA1BE1AF6D0070939F /* ViewController.swift */,
 				28DD48BC1BE1AF6E0070939F /* Main.storyboard */,
 				28DD48BF1BE1AF6E0070939F /* Assets.xcassets */,
+				28A17C3B1BF8009B00901AEA /* cruise_control_btn.png */,
+				28A17C3C1BF8009B00901AEA /* music_control_bg.png */,
+				28A17C3D1BF8009B00901AEA /* music_control_btn.png */,
+				28A17C3E1BF8009B00901AEA /* music_control_ff.png */,
+				28A17C3F1BF8009B00901AEA /* music_control_playpause.png */,
+				28A17C401BF8009B00901AEA /* music_control_rew.png */,
 				28DD48C11BE1AF6E0070939F /* LaunchScreen.storyboard */,
 				28DD48C41BE1AF6E0070939F /* Info.plist */,
+				28A17C371BF7C3F600901AEA /* CruiseViewController.swift */,
+				28A17C391BF7EA5F00901AEA /* MusicViewController.swift */,
 			);
 			path = TouchDash;
 			sourceTree = "<group>";
@@ -230,8 +254,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				28DD48C31BE1AF6E0070939F /* LaunchScreen.storyboard in Resources */,
+				28A17C421BF8009B00901AEA /* music_control_bg.png in Resources */,
+				28A17C461BF8009B00901AEA /* music_control_rew.png in Resources */,
+				28A17C451BF8009B00901AEA /* music_control_playpause.png in Resources */,
+				28A17C441BF8009B00901AEA /* music_control_ff.png in Resources */,
 				28DD48C01BE1AF6E0070939F /* Assets.xcassets in Resources */,
 				28DD48BE1BE1AF6E0070939F /* Main.storyboard in Resources */,
+				28A17C431BF8009B00901AEA /* music_control_btn.png in Resources */,
+				28A17C411BF8009B00901AEA /* cruise_control_btn.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28A17C3A1BF7EA6000901AEA /* MusicViewController.swift in Sources */,
+				28A17C381BF7C3F600901AEA /* CruiseViewController.swift in Sources */,
 				28DD48BB1BE1AF6D0070939F /* ViewController.swift in Sources */,
 				28DD48B91BE1AF6D0070939F /* AppDelegate.swift in Sources */,
 			);
@@ -442,6 +474,7 @@
 		28DD48E41BE1AF6E0070939F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = TouchDashUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDashUITests;
@@ -454,6 +487,7 @@
 		28DD48E51BE1AF6E0070939F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = TouchDashUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hackert.TouchDashUITests;
@@ -482,6 +516,7 @@
 				28DD48DF1BE1AF6E0070939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28DD48E01BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDashTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +525,7 @@
 				28DD48E21BE1AF6E0070939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		28DD48E31BE1AF6E0070939F /* Build configuration list for PBXNativeTarget "TouchDashUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +534,7 @@
 				28DD48E51BE1AF6E0070939F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

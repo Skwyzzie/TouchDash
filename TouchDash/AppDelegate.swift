@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  TouchDash
 //
-//  Created by Billy on 10/28/15.
+//  Created by Kerry on 10/28/15.
 //  Copyright © 2015 Kerry Hackert. All rights reserved.
 //
 
