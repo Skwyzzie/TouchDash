@@ -10,8 +10,11 @@ import Foundation
 import UIKit
 
 class CruiseViewController: UIViewController {
+    // Static var to share information between views
     let defaults = NSUserDefaults.standardUserDefaults()
-    var SPEED: Double = 60
+    
+    // Definitions
+    var SPEED: Double!
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var setBtn: UIButton!
     @IBOutlet weak var currCruiseSpdLbl: UILabel!
@@ -19,14 +22,18 @@ class CruiseViewController: UIViewController {
     @IBOutlet weak var stepper: UIStepper!
     @IBOutlet weak var cruiseMstrSwitch: UISwitch!
     
+    // Called when the stepper value is changed
     @IBAction func stepperValueChanged(sender: UIStepper) {
         currCruiseSpdLbl.text = Int(sender.value).description
     }
     
+    // Called when set is touched
     @IBAction func setBtnTouched(sender: UIButton) {
         SPEED = stepper.value
         defaults.setDouble(SPEED, forKey: "speed")
     }
+    
+    // Called when cancel is touched
     @IBAction func cancelBtnTouched(sender: UIButton) {
         stepper.value = SPEED
         currCruiseSpdLbl.text = Int(SPEED).description
@@ -52,12 +59,25 @@ class CruiseViewController: UIViewController {
         }
     }
     
+    // Called when the view is loaded
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        stepper.autorepeat = true
-        SPEED = defaults.doubleForKey("speed")
-        cruiseMstrSwitch.on = defaults.boolForKey("cruiseMstrSwitch")
+        
+        // Set master switch state
+        if defaults.objectForKey("cruiseMstrSwitch") != nil {
+            cruiseMstrSwitch.on = defaults.boolForKey("cruiseMstrSwitch")
+        } else {
+            cruiseMstrSwitch.on = false
+        }
+        
+        // Set speed back to saved value
+        if defaults.objectForKey("speed") != nil {
+            SPEED = defaults.doubleForKey("speed")
+        } else {
+            SPEED = 60.0
+        }
+        
+        // Set up the rest of the UI state
         if(cruiseMstrSwitch.on) {
             currCruiseSpdLbl.text = Int(SPEED).description
             currCruiseSpdLbl.enabled = true
@@ -79,6 +99,5 @@ class CruiseViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }

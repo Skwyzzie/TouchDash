@@ -23,17 +23,26 @@ class MusicViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     @IBOutlet weak var inputBtn: UIButton!
     @IBOutlet weak var inputPicker: UIPickerView!
     
+    // Called when input is touched
     @IBAction func inputBtnTouched(sender: UIButton) {
         inputPicker.hidden = false
     }
     
-    
+    // Called when the view is created
     override func viewDidLoad() {
         super.viewDidLoad()
         inputPicker.dataSource = self
         inputPicker.delegate = self
-        currentInput = defaults.stringForKey("currInput")
+        
+        // Set currentInput
+        if defaults.objectForKey("currInput") != nil {
+            currentInput = defaults.stringForKey("currInput")
+        } else {
+            currentInput = "Input"
+        }
         inputBtn.setTitle(currentInput, forState: .Normal);
+        
+        // Set option in picker wheel
         for (index, source) in inputSources.enumerate()
         {
             if source.value == currentInput
@@ -46,7 +55,6 @@ class MusicViewController: UIViewController,UIPickerViewDataSource,UIPickerViewD
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //DATA SOURCE AND DELEGATE FOR SPINNER
