@@ -15,12 +15,12 @@ class CruiseViewController: UIViewController {
     
     // Definitions
     var SPEED: Double!
+    var cruiseOn = false
     @IBOutlet weak var cancelBtn: UIButton!
     @IBOutlet weak var setBtn: UIButton!
     @IBOutlet weak var currCruiseSpdLbl: UILabel!
     @IBOutlet weak var mphLbl: UILabel!
     @IBOutlet weak var stepper: UIStepper!
-    @IBOutlet weak var cruiseMstrSwitch: UISwitch!
     
     // Called when the stepper value is changed
     @IBAction func stepperValueChanged(sender: UIStepper) {
@@ -31,32 +31,17 @@ class CruiseViewController: UIViewController {
     @IBAction func setBtnTouched(sender: UIButton) {
         SPEED = stepper.value
         defaults.setDouble(SPEED, forKey: "speed")
+        defaults.setBool(true, forKey: "cruiseMstrSwitch")
+        currCruiseSpdLbl.text = Int(SPEED).description
+        currCruiseSpdLbl.textColor = UIColor.greenColor()
     }
     
     // Called when cancel is touched
     @IBAction func cancelBtnTouched(sender: UIButton) {
         stepper.value = SPEED
+        defaults.setBool(false, forKey: "cruiseMstrSwitch")
         currCruiseSpdLbl.text = Int(SPEED).description
-    }
-    @IBAction func cruiseMstrSwitchFlipped(sender: UISwitch) {
-        if(sender.on) {
-            defaults.setBool(true, forKey: "cruiseMstrSwitch")
-            currCruiseSpdLbl.text = Int(SPEED).description
-            currCruiseSpdLbl.enabled = true
-            mphLbl.enabled = true
-            stepper.enabled = true
-            setBtn.enabled = true
-            cancelBtn.enabled = true
-        } else {
-            defaults.setBool(false, forKey: "cruiseMstrSwitch")
-            currCruiseSpdLbl.text = Int(SPEED).description
-            currCruiseSpdLbl.enabled = false
-            mphLbl.enabled = false
-            stepper.value = SPEED
-            stepper.enabled = false
-            setBtn.enabled = false
-            cancelBtn.enabled = false
-        }
+        currCruiseSpdLbl.textColor = UIColor.redColor()
     }
     
     // Called when the view is loaded
@@ -65,9 +50,9 @@ class CruiseViewController: UIViewController {
         
         // Set master switch state
         if defaults.objectForKey("cruiseMstrSwitch") != nil {
-            cruiseMstrSwitch.on = defaults.boolForKey("cruiseMstrSwitch")
+            cruiseOn = defaults.boolForKey("cruiseMstrSwitch")
         } else {
-            cruiseMstrSwitch.on = false
+            cruiseOn = false
         }
         
         // Set speed back to saved value
@@ -78,22 +63,13 @@ class CruiseViewController: UIViewController {
         }
         
         // Set up the rest of the UI state
-        if(cruiseMstrSwitch.on) {
-            currCruiseSpdLbl.text = Int(SPEED).description
-            currCruiseSpdLbl.enabled = true
-            mphLbl.enabled = true
-            stepper.enabled = true
-            stepper.value = SPEED
-            setBtn.enabled = true
-            cancelBtn.enabled = true
+        currCruiseSpdLbl.text = Int(SPEED).description
+        stepper.value = SPEED
+        
+        if(cruiseOn) {
+            currCruiseSpdLbl.textColor = UIColor.greenColor()
         } else {
-            currCruiseSpdLbl.text = Int(SPEED).description
-            currCruiseSpdLbl.enabled = false
-            mphLbl.enabled = false
-            stepper.value = SPEED
-            stepper.enabled = false
-            setBtn.enabled = false
-            cancelBtn.enabled = false
+            currCruiseSpdLbl.textColor = UIColor.redColor()
         }
     }
 
